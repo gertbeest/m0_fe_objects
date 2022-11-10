@@ -13,24 +13,28 @@ foods = {
 
 // Write code that prints all of the 'keys' of the foods variable 
 // you created above:
-// YOUR CODE HERE
+
+console.log(Object.keys(foods))
 
 // Write code that prints all of the 'values' of the foods variable 
 // you created above:
-// YOUR CODE HERE
+
+console.log(Object.values(foods))
 
 // Write code that prints the value of the second food of the foods variable 
 // you created above:
-// YOUR CODE HERE
+
+console.log(foods.grapes)
 
 // Write code that adds a food to the foods object. 
 // Then, print the updated object:
-// YOUR CODE HERE
 
+foods.pizza = 2
+console.log(foods)
 
-#-------------------
+//#-------------------
 // Part 2: Email
-#-------------------
+//#-------------------
 
 
 // Think about all the pieces of information associated with one single email in your inbox.
@@ -39,21 +43,32 @@ foods = {
 // Declare a variable that stores an object. Each key should be an attribute of an email and each
 // value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
+var email = {
+  sender: "alex123@msn.com",
+  recipient: "dave123@gmail.com",
+  attachments: 5,
+  date: "Oct. 3, 2022",
+  read: true
+}
+
 // Write code that logs your email object to the terminal.
 
+console.log(email)
 
 // Write code that logs all of the 'keys' of the email object 
 // you created above:
-// YOUR CODE HERE
+
+console.log(Object.keys(email))
 
 // Write code that logs all of the 'values' of the email object 
 // you created above:
-// YOUR CODE HERE
+
+console.log(Object.values(email))
 
 
-#-------------------
+//#-------------------
 // Part 3: Many Emails - CHALLENGE!
-#-------------------
+//#-------------------
 
 // LONG EXAMPLE:
 // Now that we've learned about Objects AND Arrays, we can combine them.
@@ -99,3 +114,29 @@ console.log(posts[0]);
 // YOU DO: Create an array of at least 3 EMAIL Objects, using the same 
 // key-value pairs you used in your email Object above.
 // Then, print the email Array to the Terminal.
+
+emails = [
+  {
+    sender: "andre123@msn.com",
+    recipient: "dave123@gmail.com",
+    attachments: 5,
+    date: "Oct. 3, 2022",
+    read: true
+  },
+  {
+    sender: "alex123@msn.com",
+    recipient: "tyler123@gmail.com",
+    attachments: 2,
+    date: "May 7, 2021",
+    read: true
+  },
+  {
+    sender: "alex123@msn.com",
+    recipient: "andre123@gmail.com",
+    attachments: 9,
+    date: "Dec. 5, 2019",
+    read: true
+  }
+]
+
+console.log(emails)
